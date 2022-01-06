@@ -1,0 +1,112 @@
+.header {
+  padding: 1em;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $header;
+
+  &__logo {
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+
+    img {
+      max-height: 6.2em;
+      transform: translateY(0px);
+    }
+  }
+
+  &--background {
+    border-bottom: 3px solid $header;
+  }
+
+  &__hamburger {
+    height: 5em;
+    width: 3em;
+    position: absolute;
+    right: 3%;
+    align-self: center;
+    transition: 0.5s;
+
+    @media screen and (min-width: $desktop) {
+      display: none;
+    }
+    .header__line:nth-child(1) {
+      @include navbarLine(35%);
+    }
+    .header__line:nth-child(2) {
+      @include navbarLine(50%);
+    }
+    .header__line:nth-child(3) {
+      @include navbarLine(65%);
+    }
+  }
+
+  &__exit {
+    .header__line:nth-child(1) {
+      top: 50%;
+      transform: rotate(-405deg);
+    }
+    .header__line:nth-child(2) {
+      transform: scale(0);
+    }
+    .header__line:nth-child(3) {
+      top: 50%;
+      transform: rotate(405deg);
+    }
+  }
+
+  &__mobile {
+    position: absolute;
+    width: 100%;
+    padding: 1em 0;
+    z-index: 2;
+    transform-origin: top;
+    transform: translateY(240px) translateX(-16px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $header;
+    border-top: 3px solid white;
+
+    a {
+      margin: 21px 0;
+      padding-bottom: 0.3em;
+      font-size: 2em;
+      color: white;
+      text-decoration: none;
+      //border-bottom: 2px solid $white;
+
+      &:hover {
+        color: $white;
+        border-bottom: 2px solid $white;
+      }
+    }
+  }
+  &__desktop {
+    @media screen and (max-width: $desktop) {
+      display: none;
+    }
+
+    a {
+      margin: 0 1em;
+      padding-bottom: 0.3em;
+      font-size: 1.1em;
+      color: $white;
+      text-decoration: none;
+      border-bottom: 2px solid $white;
+
+      &:hover {
+        color: $white;
+        border-bottom: 2px solid $white;
+      }
+    }
+  }
+}
+
+.d-none {
+  display: none;
+}

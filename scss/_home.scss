@@ -1,0 +1,70 @@
+.shop-image {
+  img {
+    width: 100vw;
+  }
+
+}
+
+.home {
+  margin: 60px 0 80px;
+
+  &__logo {
+    margin: 80px 0;
+    display: flex;
+    justify-content: center;
+    img {
+      width: 80vw;
+    }
+  }
+}
+
+.middle-section {
+  padding: 90px 0;
+  background: $blue;
+  .text-container {
+    color: white;
+    font-weight: 300;
+    display: grid;
+    grid-template-columns: 1fr;
+    .quote {
+      font-weight: 300;
+      color: white;
+    }
+
+    button {
+      width: 277px;
+      justify-self: center;
+    }
+  }
+}
+
+.gallery {
+  margin: 50px 0;
+
+  .text-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    h2 {
+      margin-bottom: 5px;
+    }
+
+    button {
+      justify-self: center;
+      width: 100%;
+    }
+  }
+
+  .gradient-relative {
+    position: relative;
+
+    .gradient {
+      position: absolute;
+      transform: translateX(5vw) translateY(15px);
+      z-index: -1;
+      width: 90vw;
+      height: 55px;
+      background: linear-gradient(180deg, #EDEDED 0%, rgba(255, 255, 255, 0) 100%);
+      filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.05));
+    }
+  }
+}

@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300;400;500;600;700;800&display=swap');
+
+$desktop: 768px;
+
+$header: #6A848C;
+$gray: #757575;
+$blue: #1A396D;
+$red: #E30016;
+$black: #000000;
+$grayText: #4F4F4F;
+$white: #FFFFFF;
+
+@mixin imageZoomEffect($scale) {
+  overflow: hidden;
+  width: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.2s ease-in-out;
+  }
+  &:hover {
+    img {
+      transform: scale($scale);
+    }
+  }
+}
+
+@mixin mobileHeaderH1 {
+  @media screen and (max-width: $laptop) {
+    margin: 1em 0;
+    font-size: 3.6em;
+    padding: 0 2em;
+  }
+}
+
+@mixin mobileHeaderH2 {
+  @media screen and (max-width: $laptop) {
+    margin: 1em 0;
+    font-size: 3.2em;
+    padding: 0 2em;
+  }
+}
+
+@mixin mobileParagraph {
+  @media screen and (max-width: $laptop) {
+    font-size: 2em;
+    padding: 0 2em;
+  }
+}
+
+@mixin navbarLine($top) {
+  position: absolute;
+  height: 3px;
+  width: 40px;
+  border-radius: 1.5px;
+  background-color: $white;
+  top: $top;
+  transition: 0.4s;
+}

@@ -1,0 +1,27 @@
+{
+    "name": "woodhouse_architecture",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "gulp",
+        "build": "gulp sass"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.26.7",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^7.0.1",
+        "gulp-concat": "^2.6.1",
+        "gulp-minify": "^3.1.0",
+        "gulp-sass": "^4.0.2",
+        "gulp-sourcemaps": "^2.6.5",
+        "sass": "^1.26.3"
+    },
+    "browserslist": [
+        "defaults"
+    ],
+    "dependencies": {
+        "gulp-htmlmin": "^5.0.1",
+        "gulp-uglify": "^3.0.2",
+        "node-mandrill": "^1.0.1",
+        "sendgrid": "^5.2.3"
+    }
+}
