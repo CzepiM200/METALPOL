@@ -43,7 +43,7 @@ function minifyJS(done) {
         },
         noSource: true
     }))
-        .pipe(gulp.dest('dist/js'))
+        .pipe(gulp.dest('docs/js'))
     done();
 }
 
@@ -51,34 +51,34 @@ function minifyCSS(done) {
     gulp.src("./scss/*.scss")
         .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
         .pipe(autoprefixer())
-        .pipe(gulp.dest("dist/css"));
+        .pipe(gulp.dest("docs/css"));
     done();
 }
 
 function moveHTML(done) {
     gulp.src("./*.html")
         .pipe(htmlmin({ collapseWhitespace: true }))
-        .pipe(gulp.dest("dist"));
+        .pipe(gulp.dest("docs"));
     done();
 }
 
 function movePHP(done) {
     gulp.src("./*.php")
-        .pipe(gulp.dest("dist"));
+        .pipe(gulp.dest("docs"));
     done();
 }
 
 function moveHtaccess(done) {
     gulp.src("./*.htaccess")
-        .pipe(gulp.dest("dist"));
+        .pipe(gulp.dest("docs"));
     done();
 }
 
 function moveImages(done) {
     gulp.src("./images/*.*")
-        .pipe(gulp.dest("dist/images"));
+        .pipe(gulp.dest("docs/images"));
      gulp.src("./images/svg/*.*")
-        .pipe(gulp.dest("dist/images/svg"));
+        .pipe(gulp.dest("docs/images/svg"));
     done();
 }
 

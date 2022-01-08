@@ -1,0 +1,1 @@
+const animationSpeed="0.8s",sectionTitle=document.querySelectorAll(".animate");sectionTitle.forEach(e=>{e.style.opacity="0",e.style.transition="all 0.8s ease-in-out"}),sectionTitle.forEach(e=>{new IntersectionObserver(function(t){!0===t[0].isIntersecting&&(e.style.opacity="1")},{threshold:[0]}).observe(e)});
