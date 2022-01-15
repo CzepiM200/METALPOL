@@ -344,6 +344,12 @@
   padding: 50px 0;
   background: #757575;
 }
+@media screen and (min-width: 768px) {
+  .genesis .text-container {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+}
 .genesis .text-container h2, .genesis .text-container p {
   color: white;
 }
@@ -461,6 +467,19 @@
 
 .spacer {
   margin: 80px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact .text-container {
+  margin-top: 50px;
+}
+.contact__map {
+  margin-bottom: 50px;
 }
 
 * {

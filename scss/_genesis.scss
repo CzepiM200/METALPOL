@@ -3,6 +3,10 @@
   background: #757575;
 
   .text-container {
+    @media screen and (min-width: $desktop) {
+      margin: 0 auto;
+      max-width: 1200px;
+    }
     h2, p {
       color: white;
     }
