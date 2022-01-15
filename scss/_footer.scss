@@ -83,6 +83,37 @@
     justify-self: center;
     margin-bottom: 50px;
   }
+
+  @media screen and (min-width: $desktop) {
+    padding: 10px 0 50px;
+    &__main {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    &__paragraph {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    &__hours {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    &_left {
+      min-height: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      align-content: start;
+    }
+
+    &__map {
+      justify-self: end;
+    }
+  }
 }
 
 .sec-footer {

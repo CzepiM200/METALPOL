@@ -69,19 +69,29 @@
                 <img src="/images/icons/email.svg"/>
                 <p>metalpollodz@wp.pl</p>
             </div>
+            <div class="footer__hours">
+                <div>
+                    <p>Godziny pracy:</p>
+                </div>
+                <div>
+                    <p><strong>PN-PT 7:00 - 16:00</strong></p>
+                    <p><strong>SO 8:00 - 13:00</strong></p>
+                </div>
+            </div>
+
             <div class="footer__map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2470.226462116437!2d19.482151316433878!3d51.74718237967513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471a34b99013dcb9%3A0xca9deb977cac930e!2zU3RhbmlzxYJhd2EgUHJ6eWJ5c3pld3NraWVnbyA4MCwgOTAtMDAxIMWBw7Nkxbo!5e0!3m2!1spl!2spl!4v1641481223191!5m2!1spl!2spl"
                         width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </article>
-        <article class="footer_center">
+        <form action="https://formsubmit.co/czepimm200@gmail.com" method="POST" class="footer_center">
             <h3>Formularz kontaktowy</h3>
             <p>Email:</p>
-            <input>
+            <input type="email" name="email">
             <p>Wiadomość:</p>
-            <textarea></textarea>
-            <button>Wyślij wiadomość</button>
-        </article>
+            <textarea name="message"></textarea>
+            <button type="submit">Wyślij wiadomość</button>
+        </form>
         <article class="footer_right">
             <h3>METALPOL Świętej Teresy</h3>
             <div class="footer__paragraph">
@@ -124,7 +134,6 @@
 </div>
 
 <script src="js/comp.js"></script>
-<script src="js/slider.js"></script>
 <script src="js/hamburger.js"></script>
 <script src="js/animations.js"></script>
 <script>

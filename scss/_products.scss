@@ -55,8 +55,14 @@
       }
 
       .desktop {
+        padding: 0 48px;
+
         display: grid;
         grid-template-columns: 1fr 1fr;
+
+        img {
+          max-width: 513px;
+        }
 
         .text-section {
           width: 360px;
@@ -81,6 +87,7 @@
 
     .text-container {
       margin: 0;
+
       h2 {
         font-weight: 300;
       }
@@ -126,4 +133,8 @@
       text-align: left;
     }
   }
+}
+
+.spacer {
+  margin: 80px;
 }
