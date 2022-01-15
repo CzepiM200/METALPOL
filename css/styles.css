@@ -285,23 +285,6 @@
   padding: 0 20px;
   margin: 20px 0 10px;
 }
-.footer_center input {
-  padding: 0 20px;
-  height: 60px;
-  width: 310px;
-  border-radius: 12px;
-  border: none;
-  background: #FAFAFA;
-}
-.footer_center textarea {
-  padding: 0 20px;
-  height: 200px;
-  width: 310px;
-  border-radius: 12px;
-  border: none;
-  background: #FAFAFA;
-  resize: none;
-}
 .footer_right {
   justify-self: center;
   margin-bottom: 50px;
@@ -470,6 +453,7 @@
 }
 
 .contact {
+  margin-bottom: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -480,6 +464,24 @@
 }
 .contact__map {
   margin-bottom: 50px;
+}
+.contact__from {
+  width: 100vw;
+  height: 1080px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/gallery/g1.jpg");
+  background-size: cover;
+}
+.contact__from form {
+  padding: 0 40px 40px;
+  background: #F3F3F3;
+  box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.51);
+  border-radius: 32px;
+}
+.contact__from form input, .contact__from form textarea {
+  width: 680px;
 }
 
 * {
@@ -553,5 +555,24 @@ button {
 .shop-image img {
   vertical-align: top;
   width: 100vw;
+}
+
+input {
+  padding: 0 20px;
+  height: 60px;
+  width: 310px;
+  border-radius: 12px;
+  border: none;
+  background: #FAFAFA;
+}
+
+textarea {
+  padding: 20px;
+  height: 200px;
+  width: 310px;
+  border-radius: 12px;
+  border: none;
+  background: #FAFAFA;
+  resize: none;
 }
 /*# sourceMappingURL=styles.css.map */
