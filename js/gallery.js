@@ -10,6 +10,6 @@ galleryZoom.addEventListener('click', () => {
 images.forEach(element => {
     element.addEventListener('click', () => {
         galleryZoom.style.display = 'flex'
-        galleryZoomImage.setAttribute('src', element.src)
+        galleryZoomImage.setAttribute('src', element.src.replace('/thumbnails-min', ''))
     });
 });
