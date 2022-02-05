@@ -26,10 +26,14 @@
 
 <article class="contact">
     <div class="contact__from">
-        <form action="https://formsubmit.co/czepimm200@gmail.com" method="POST" class="footer_center">
+        <form id="main-contact-from" method="POST" class="footer_center">
             <div class="text-container">
                 <h2>Formularz kontaktowy</h2>
             </div>
+            <select name="shop" id="main-shop-select">
+                <option value="metalpollodz@wp.pl">METALPOL Przybyszewskiego</option>
+                <option value="metalpol_teresy@wp.pl">METALPOL Świętej Teresy</option>
+            </select>
             <p>Email:</p>
             <input type="email" name="email">
             <p>Imię:</p>
@@ -81,10 +85,17 @@
                         width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </article>
-        <form action="https://formsubmit.co/czepimm200@gmail.com" method="POST" class="footer_center"><h3>Formularz
-            kontaktowy</h3>
-            <p>Email:</p><input type="email" name="email">
-            <p>Wiadomość:</p><textarea name="message"></textarea>
+        <form method="POST"
+              class="footer_center" id="contact-from">
+            <h3>Formularz kontaktowy</h3>
+            <select name="shop" id="shop-select">
+                <option value="metalpollodz@wp.pl">METALPOL Przybyszewskiego</option>
+                <option value="metalpol_teresy@wp.pl">METALPOL Świętej Teresy</option>
+            </select>
+            <p>Email:</p>
+            <input type="email" name="email">
+            <p>Wiadomość:</p>
+            <textarea name="message"></textarea>
             <button type="submit">Wyślij wiadomość</button>
         </form>
         <article class="footer_right"><h3>METALPOL Świętej Teresy</h3>
@@ -112,5 +123,6 @@
 <div class="sec-footer"><p>*Najczęściej pojawiające się zdanie klientów</p></div>
 
 <script src="js/hamburger.js"></script>
+<script src="js/contact-form.js"></script>
 </body>
 </html>

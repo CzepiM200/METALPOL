@@ -290,8 +290,13 @@
                         width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </article>
-        <form action="https://formsubmit.co/czepimm200@gmail.com" method="POST" class="footer_center">
+        <form method="POST"
+              class="footer_center" id="contact-from">
             <h3>Formularz kontaktowy</h3>
+            <select name="shop" id="shop-select">
+                <option value="metalpollodz@wp.pl">METALPOL Przybyszewskiego</option>
+                <option value="metalpol_teresy@wp.pl">METALPOL Świętej Teresy</option>
+            </select>
             <p>Email:</p>
             <input type="email" name="email">
             <p>Wiadomość:</p>
@@ -339,7 +344,7 @@
     <p>*Najczęściej pojawiające się zdanie klientów</p>
 </div>
 
-<script src="js/comp.js"></script>
+<script src="js/contact-form.js"></script>
 <script src="js/hamburger.js"></script>
 <script src="js/animations.js"></script>
 <script>
