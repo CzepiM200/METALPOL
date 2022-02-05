@@ -471,7 +471,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../images/gallery/g1.jpg");
+  background-image: url("../images/gallery/thumbnails-min/g1.jpg");
   background-size: cover;
 }
 .contact__from form {
