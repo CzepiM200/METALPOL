@@ -48,5 +48,7 @@ function submitMain(event) {
         });
 }
 
-form.addEventListener('submit', submitFooter);
-mainForm.addEventListener('submit', submitMain);
+if (form)
+    form.addEventListener('submit', submitFooter);
+if (mainForm)
+    mainForm.addEventListener('submit', submitMain);

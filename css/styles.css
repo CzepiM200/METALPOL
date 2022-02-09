@@ -191,6 +191,7 @@
 .gallery__image-item {
   width: 100%;
   margin-bottom: 43px;
+  margin-bottom: 43px;
   border: 3px solid #EEEEEE;
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -202,21 +203,18 @@
   }
 }
 .gallery .gradient-relative {
+  height: 100px;
+  width: 100%;
+  padding: 16px;
   position: relative;
 }
 .gallery .gradient-relative .gradient {
   position: absolute;
-  transform: translateX(5vw) translateY(15px);
   z-index: -1;
-  width: 90vw;
+  width: calc(100% - 32px);
   height: 55px;
   background: linear-gradient(180deg, #EDEDED 0%, rgba(255, 255, 255, 0) 100%);
   filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.05));
-}
-@media screen and (min-width: 768px) {
-  .gallery .gradient-relative .gradient {
-    right: 0;
-  }
 }
 
 .animated-thumbnails li {
@@ -236,6 +234,8 @@
 .gallery-zoom img {
   width: 100%;
   max-height: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .footer {
@@ -289,7 +289,7 @@
   justify-self: center;
   margin-bottom: 50px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   .footer {
     padding: 10px 0 50px;
   }
@@ -480,8 +480,21 @@
   box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.51);
   border-radius: 32px;
 }
-.contact__from form input, .contact__from form textarea {
-  width: 680px;
+.contact__from form input, .contact__from form textarea, .contact__from form select {
+  width: 100%;
+}
+@media screen and (min-width: 500px) {
+  .contact__from form input, .contact__from form textarea, .contact__from form select {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact__from form input, .contact__from form textarea, .contact__from form select {
+    width: 680px;
+  }
+}
+.contact__from form .text-container {
+  margin: 40px 0 0;
 }
 
 * {
@@ -558,12 +571,12 @@ button {
 }
 
 input {
-  padding: 0 20px;
-  height: 60px;
   width: 310px;
   border-radius: 12px;
   border: none;
   background: #FAFAFA;
+  height: 60px;
+  padding: 0 20px;
 }
 
 textarea {

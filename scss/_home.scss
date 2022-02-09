@@ -72,6 +72,7 @@
   &__image-item {
     width: 100%;
     margin-bottom: 43px;
+    margin-bottom: 43px;
     border: 3px solid #EEEEEE;
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -83,20 +84,18 @@
   }
 
   .gradient-relative {
+    height: 100px;
+    width: 100%;
+    padding: 16px;
     position: relative;
 
     .gradient {
       position: absolute;
-      transform: translateX(5vw) translateY(15px);
       z-index: -1;
-      width: 90vw;
+      width: calc(100% - 32px);
       height: 55px;
       background: linear-gradient(180deg, #EDEDED 0%, rgba(255, 255, 255, 0) 100%);
       filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.05));
-
-      @media screen and (min-width: $desktop) {
-          right: 0;
-      }
     }
   }
 }
@@ -120,5 +119,6 @@
   img {
     width: 100%;
     max-height: 90%;
+    object-fit: cover;
   }
 }

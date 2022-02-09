@@ -28,9 +28,22 @@
       box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.51);
       border-radius: 32px;
 
-      input, textarea {
-        width: 680px;
+      input, textarea, select {
+        width: 100%;
+
+        @media screen and (min-width: $mobile-m) {
+          width: 400px;
+        }
+
+        @media screen and (min-width: $desktop) {
+          width: 680px;
+        }
       }
+
+      .text-container {
+        margin: 40px 0 0;
+      }
+
     }
   }
 }

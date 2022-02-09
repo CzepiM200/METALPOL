@@ -7,6 +7,7 @@
     <meta name="description" content="METALPOL">
     <meta name="author" content="METALPOL">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.google.com/maps/embed ">
     <link rel="icon" href="./images/Logo.ico">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -90,13 +91,36 @@
         <img class="gallery__image-item" src="./images/gallery/thumbnails-min/g3.jpg"/>
     </div>
 
-<!--    <div class="gradient-relative">-->
-<!--        <div class="gradient"/>-->
-<!--        <div class="gradient"/>-->
-<!--    </div>-->
-<!--    <div class="text-container">-->
-<!--        <button>Zobacz więcej</button>-->
-<!--    </div>-->
+    <div class="gallery__items gallery__items_more" style="display: none">
+        <img class="gallery__image-item" src="./images/gallery-extended/thumbnails-min/BHP1-min.jpg"/>
+        <img class="gallery__image-item" src="./images/gallery-extended/thumbnails-min/BHP2-min.jpg"/>
+        <img class="gallery__image-item" src="./images/gallery-extended/thumbnails-min/METALPOL13-min.jpg"/>
+        <img class="gallery__image-item" src="./images/gallery-extended/thumbnails-min/METALPOL14-min.jpg"/>
+        <img class="gallery__image-item" src="./images/gallery-extended/thumbnails-min/METALPOL15-min.jpg"/>
+        <img class="gallery__image-item" src="./images/gallery-extended/thumbnails-min/METALPOL17-min.jpg"/>
+        <img class="gallery__image-item" src="./images/gallery-extended/thumbnails-min/METALPOL18-min.jpg"/>
+        <img class="gallery__image-item" src="./images/gallery-extended/thumbnails-min/METALPOL19-min.jpg"/>
+        <img class="gallery__image-item" src="./images/gallery-extended/thumbnails-min/METALPOL22-min.jpg"/>
+        <img class="gallery__image-item" src="./images/gallery-extended/thumbnails-min/METALPOL25-min.jpg"/>
+        <img class="gallery__image-item" src="./images/gallery-extended/thumbnails-min/METALPOL32-min.jpg"/>
+        <img class="gallery__image-item" src="./images/gallery-extended/thumbnails-min/METALPOL35-min.jpg"/>
+        <img class="gallery__image-item" src="./images/gallery-extended/thumbnails-min/METALPOL40-min.jpg"/>
+        <img class="gallery__image-item" src="./images/gallery-extended/thumbnails-min/METALPOL41-min.jpg"/>
+        <img class="gallery__image-item" src="./images/gallery-extended/thumbnails-min/METALPOL42-min.jpg"/>
+        <img class="gallery__image-item" src="./images/gallery-extended/thumbnails-min/METALPOL44-min.jpg"/>
+        <img class="gallery__image-item" src="./images/gallery-extended/thumbnails-min/METALPOL46-min.jpg"/>
+        <img class="gallery__image-item" src="./images/gallery-extended/thumbnails-min/METALPOL48-min.jpg"/>
+        <img class="gallery__image-item" src="./images/gallery-extended/thumbnails-min/Teresy1-min.jpg"/>
+        <img class="gallery__image-item" src="./images/gallery-extended/thumbnails-min/Teresy2-min.jpg"/>
+        <img class="gallery__image-item" src="./images/gallery-extended/thumbnails-min/Teresy3-min.jpg"/>
+    </div>
+
+    <div class="gradient-relative">
+        <div class="gradient"/>
+    </div>
+    <div class="text-container">
+        <button id="gallery_more">Zobacz więcej</button>
+    </div>
 
 </article>
 
@@ -178,8 +202,7 @@
             </div>
 
             <div class="footer__map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2466.836717685016!2d19.39179951643529!3d51.80914407968585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471bb5726da1c8c5%3A0x4ca52707a24e6cab!2zxZt3LiBUZXJlc3kgb2QgRHppZWNpxIV0a2EgSmV6dXMgMTA1QiwgOTEtMjIyIMWBw7Nkxbo!5e0!3m2!1spl!2spl!4v1641481869726!5m2!1spl!2spl"
-                        width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2470.226462121886!2d19.482145951522007!3d51.74718237957537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471a34b99013dcb9%3A0xca9deb977cac930e!2zU3RhbmlzxYJhd2EgUHJ6eWJ5c3pld3NraWVnbyA4MCwgOTAtMDAxIMWBw7Nkxbo!5e0!3m2!1spl!2spl!4v1644431053032!5m2!1spl!2spl" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </article>
     </section>
@@ -189,28 +212,9 @@
     <p>*Najczęściej pojawiające się zdanie klientów</p>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.3.0/lightgallery.umd.min.js"></script>
 <script src="js/contact-form.js"></script>
 <script src="js/hamburger.js"></script>
 <script src="js/gallery.js"></script>
 <script src="js/animations.js"></script>
-<script>
-    (function () {
-        new Slider("#slider .slide").options({
-            prev: "#slider nav button.arrow-prev",
-            next: "#slider nav button.arrow-next",
-            nav: "#slider nav.dots span"
-        }).init();
-    })();
-</script>
-<script type="module">
-    import PhotoSwipeLightbox from '/v5/photoswipe/photoswipe-lightbox.esm.js';
-    const lightbox = new PhotoSwipeLightbox({
-        gallery: '#gallery--simple',
-        children: 'a',
-        pswpModule: '/v5/photoswipe/photoswipe.esm.js'
-    });
-    lightbox.init();
-</script>
 </body>
 </html> 
