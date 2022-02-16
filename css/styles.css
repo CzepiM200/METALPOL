@@ -181,11 +181,23 @@
   padding: 16px;
   width: 100%;
 }
+.gallery__items_more {
+  display: none;
+}
+.gallery__items_show {
+  display: grid;
+}
 @media screen and (min-width: 768px) {
   .gallery__items {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+  }
+  .gallery__items_more {
+    display: none;
+  }
+  .gallery__items_show {
+    display: grid;
   }
 }
 .gallery__image-item {

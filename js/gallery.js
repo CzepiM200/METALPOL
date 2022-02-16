@@ -10,10 +10,11 @@ if (galleryMore && galleryHidden && gradientRelative)
         galleryHidden.setAttribute('style', 'display: grid')
         galleryMore.setAttribute('style', 'display: none')
         gradientRelative.setAttribute('style', 'display: none')
+        galleryHidden.classList.add('gallery__items_show');
+        galleryHidden.classList.remove('gallery__items_more');
     })
 
 galleryZoom.addEventListener('click', () => {
-    console.log(galleryZoom)
     galleryZoom.style.display = 'none'
 })
 
