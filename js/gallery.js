@@ -7,11 +7,12 @@ const galleryMore = document.querySelector("#gallery_more")
 
 if (galleryMore && galleryHidden && gradientRelative)
     galleryMore.addEventListener('click', () => {
-        galleryHidden.setAttribute('style', 'display: grid')
         galleryMore.setAttribute('style', 'display: none')
         gradientRelative.setAttribute('style', 'display: none')
         galleryHidden.classList.add('gallery__items_show');
         galleryHidden.classList.remove('gallery__items_more');
+        galleryMore.classList.add('gradient-relative_hidden');
+        gradientRelative.classList.add('gallery_more_hidden');
     })
 
 galleryZoom.addEventListener('click', () => {

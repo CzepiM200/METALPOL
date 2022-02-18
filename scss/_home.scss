@@ -99,11 +99,21 @@
     }
   }
 
+  .gallery_more {
+    &_hidden {
+      display: none;
+    }
+  }
+
   .gradient-relative {
     height: 100px;
     width: 100%;
     padding: 16px;
     position: relative;
+
+    &_hidden {
+      display: none;
+    }
 
     .gradient {
       position: absolute;

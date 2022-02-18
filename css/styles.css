@@ -214,11 +214,17 @@
     margin-bottom: 0;
   }
 }
+.gallery .gallery_more_hidden {
+  display: none;
+}
 .gallery .gradient-relative {
   height: 100px;
   width: 100%;
   padding: 16px;
   position: relative;
+}
+.gallery .gradient-relative_hidden {
+  display: none;
 }
 .gallery .gradient-relative .gradient {
   position: absolute;
